@@ -25,7 +25,6 @@
 (require 'setup-editing)
 
 
-
 ;; function-args
 ;; (require 'function-args)
 ;; (fa-config-default)
@@ -38,10 +37,17 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+    (color-theme zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; for color theme
+(require 'color-theme)
+(color-theme-initialize)
+(setq color-theme-is-global t)
+(color-theme-subtle-hacker)
